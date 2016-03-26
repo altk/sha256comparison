@@ -1,0 +1,6 @@
+import "inspectable.idl";
+
+namespace CPP
+{
+
+}

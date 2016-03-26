@@ -64,8 +64,6 @@ namespace CPPCX
                     String^ base64String;
                     base64String = CryptographicBuffer::EncodeToBase64String(input);
                     input = CryptographicBuffer::ConvertStringToBinary(base64String, BinaryStringEncoding::Utf8);
-                    base64String = CryptographicBuffer::EncodeToBase64String(input);
-                    input = CryptographicBuffer::ConvertStringToBinary(base64String, BinaryStringEncoding::Utf8);
                 }
 
                 auto end = high_resolution_clock::now();

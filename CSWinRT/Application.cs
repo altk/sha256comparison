@@ -34,7 +34,6 @@ namespace CSWinRT
                 {
                     input = hasher.HashData(input);
                     input = Encoding.ASCII.GetBytes(CryptographicBuffer.EncodeToBase64String(input)).AsBuffer();
-                    input = Encoding.ASCII.GetBytes(CryptographicBuffer.EncodeToBase64String(input)).AsBuffer();
                 }
 
                 GC.Collect(2, GCCollectionMode.Forced, true);

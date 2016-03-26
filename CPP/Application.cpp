@@ -53,7 +53,6 @@ void inplaceBase64(std::vector<uint8_t> &data, std::vector<uint8_t> &buffer) noe
     data.swap(buffer);
 }
 
-
 class FrameworkView sealed : public Microsoft::WRL::RuntimeClass<ABI::Windows::ApplicationModel::Core::IFrameworkView>
 {
     InspectableClass(L"FrameworkView", BaseTrust);
@@ -179,7 +178,6 @@ private:
             for (auto i = 0; i < 1000000; ++i)
             {
                 inplaceSha256(result, buffer);
-                inplaceBase64(result, buffer);
                 inplaceBase64(result, buffer);
             }
 

@@ -42,7 +42,6 @@ namespace CS
                         input[4 * j + 3] = temp[0];
                     }
                     input = Encoding.ASCII.GetBytes(Convert.ToBase64String(input));
-                    input = Encoding.ASCII.GetBytes(Convert.ToBase64String(input));
                 }
 
                 GC.Collect(2, GCCollectionMode.Forced, true);

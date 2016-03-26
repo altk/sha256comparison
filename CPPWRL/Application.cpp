@@ -165,12 +165,6 @@ private:
                 cryptoBufferStatics->ConvertStringToBinary(base64String.Get(),
                                                            BinaryStringEncoding_Utf8,
                                                            input.ReleaseAndGetAddressOf());
-
-                cryptoBufferStatics->EncodeToBase64String(input.Get(), base64String.GetAddressOf());
-
-                cryptoBufferStatics->ConvertStringToBinary(base64String.Get(),
-                                                           BinaryStringEncoding_Utf8,
-                                                           input.ReleaseAndGetAddressOf());
             }
 
             auto end = high_resolution_clock::now();

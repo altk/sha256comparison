@@ -112,6 +112,12 @@
       <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
       <CompileAsWinRT>false</CompileAsWinRT>
     </ClCompile>
+    <Link>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+    </Link>
+    <Link>
+      <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -126,6 +132,12 @@
       <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
       <CompileAsWinRT>false</CompileAsWinRT>
     </ClCompile>
+    <Link>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+    </Link>
+    <Link>
+      <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -140,6 +152,12 @@
       <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
       <CompileAsWinRT>false</CompileAsWinRT>
     </ClCompile>
+    <Link>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+    </Link>
+    <Link>
+      <FullProgramDatabaseFile>false</FullProgramDatabaseFile>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -174,7 +192,7 @@
     <Midl Include="CPPWRL.idl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-	<Import Project="$(SolutionDir)\Build\midlrt.targets" />
+  <Import Project="$(SolutionDir)\Build\midlrt.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
 </Project>

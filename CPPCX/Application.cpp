@@ -27,6 +27,8 @@ namespace CPPCX
             using namespace std;
             using namespace Windows::UI::Core;
 
+            _coreWindow->Activate();
+
             thread(Compute).detach();
 
             _coreWindow->Dispatcher->ProcessEvents(CoreProcessEventsOption::ProcessUntilQuit);

@@ -50,9 +50,9 @@ namespace CS
 
                 ApplicationData.Current.LocalSettings.Values["Result"] = CryptographicBuffer.EncodeToHexString(input.AsBuffer());
                 ApplicationData.Current.LocalSettings.Values["Time"] = sw.ElapsedMilliseconds;
-            }
 
-            throw new Exception();
+                CoreApplication.Exit();
+            }
         }
 
         private CoreWindow _coreWindow;

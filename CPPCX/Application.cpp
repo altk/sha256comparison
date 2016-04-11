@@ -63,9 +63,7 @@ namespace CPPCX
                 for (auto i = 0; i < 1000000; ++i)
                 {
                     input = hasher->HashData(input);
-                    String^ base64String;
-                    base64String = CryptographicBuffer::EncodeToBase64String(input);
-                    input = CryptographicBuffer::ConvertStringToBinary(base64String, BinaryStringEncoding::Utf8);
+                    input = CryptographicBuffer::ConvertStringToBinary(CryptographicBuffer::EncodeToBase64String(input), BinaryStringEncoding::Utf8);
                 }
 
                 auto end = high_resolution_clock::now();

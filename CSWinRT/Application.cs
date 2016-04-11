@@ -33,7 +33,7 @@ namespace CSWinRT
                 for (var i = 0; i < 1000000; i++)
                 {
                     input = hasher.HashData(input);
-                    input = Encoding.ASCII.GetBytes(CryptographicBuffer.EncodeToBase64String(input)).AsBuffer();
+                    input = CryptographicBuffer.ConvertStringToBinary(CryptographicBuffer.EncodeToBase64String(input), BinaryStringEncoding.Utf8);
                 }
 
                 GC.Collect(2, GCCollectionMode.Forced, true);
